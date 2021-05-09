@@ -8,25 +8,32 @@
 	
 	<title>Zhonghe Wen</title>
 	
-	<link rel="shortcut icon" href="images/ZhongheLogoSmall.png">
+	<link rel="shortcut icon" href="images/Logo_PNG.png">
+
 	
 	<!-- Bootstrap core CSS -->
 	<link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
+
     <!-- Plugins -->
-	<link href="assets/css/font-awesome.min.css" rel="stylesheet">
+   <!-- <script src="assets/js/ssg.js"></script> -->
+
+	<link href="assets/css/allfa.css" rel="stylesheet">
 	
-	<!-- Template core CSS -->
+	<!-- Core CSS -->
 	<link href="assets/css/main.css" rel="stylesheet">
-	<script type="text/javascript">
-		window.onload = function(){
-	    setTimeout(function(){
-	    var loader = document.getElementsByClassName("page-loader")[0];
-	    loader.className="page-loader fadeout" ;//使用渐隐的方法淡出loading page
-	    setTimeout(function(){loader.style.display="none"},2000)
-	    },2000)//强制显示loading page 2s
-	}
-	</script>
+
+    <!-- loader control-->
+    <script type="text/javascript">
+        window.onload = function(){
+            setTimeout(function(){
+            var loader = document.getElementsByClassName("page-loader")[0];
+            loader.className="page-loader fadeout" ;//使用渐隐的方法淡出loading page
+            setTimeout(function(){loader.style.display="none"},3000)
+            },3000)//强制显示loading page 2s
+
+        }
+    </script>
 </head>
 
 
@@ -34,42 +41,20 @@
 <div class="WRAPPER">
 
     <!-- PRELOADER -->
-    <div class="page-loader" >
-        <div class="preloader-1">
-              <div>Loading Zhonghe's Portfolio</div>
-              <span class="line line-1"></span>
-              <span class="line line-2"></span>
-              <span class="line line-3"></span>
-              <span class="line line-4"></span>
-              <span class="line line-5"></span>
-              <span class="line line-6"></span>
-              <span class="line line-7"></span>
-              <span class="line line-8"></span>
-              <span class="line line-9"></span>
-        </div>
+   <div class="page-loader" >
+        <div class="loaderBar"></div>
+        <svg width="426" height="164" viewBox="0 0 426 164" fill="none" xmlns="http://www.w3.org/2000/svg" id="loader">
+
+        <path d="M62.0119 13.64C63.9319 11.24 65.1319 10.04 65.6119 10.04C66.0919 10.04 67.1319 10.68 68.7319 11.96C70.4919 13.24 72.0119 13.88 73.2919 13.88C74.5719 13.88 76.2519 14.36 78.3319 15.32C80.4119 16.12 82.3319 16.68 84.0919 17C86.0119 17.32 87.3719 17.96 88.1719 18.92C89.1319 19.88 90.4119 20.52 92.0119 20.84C93.2919 21.16 94.4119 21.8 95.3719 22.76C96.3319 23.72 96.8119 24.76 96.8119 25.88C96.8119 26.84 97.3719 27.88 98.4919 29C100.252 31.24 99.9319 33.8 97.5319 36.68C95.2919 39.4 93.6119 41.88 92.4919 44.12C92.1719 45.08 91.5319 45.56 90.5719 45.56C89.4519 45.56 87.4519 48.36 84.5719 53.96C82.8119 57.8 81.6919 59.88 81.2119 60.2C80.8919 60.52 80.5719 61.08 80.2519 61.88C79.9319 62.52 79.7719 62.36 79.7719 61.4C79.6119 57.88 77.2919 60.28 72.8119 68.6C71.5319 70.36 70.2519 72.52 68.9719 75.08C65.6119 81.96 63.1319 86.44 61.5319 88.52L60.0919 91.88H60.5719L58.8919 95.72C57.7719 98.12 56.8119 99.48 56.0119 99.8C54.5719 100.6 51.6119 105.32 47.1319 113.96C44.4119 118.92 42.6519 122.12 41.8519 123.56C38.9719 126.92 38.6519 128.84 40.8919 129.32C41.8519 129.48 50.4919 129.64 66.8119 129.8C83.2919 129.96 92.8919 130.52 95.6119 131.48C98.4919 132.44 100.012 133.32 100.172 134.12C100.492 134.92 100.892 135.24 101.372 135.08C102.012 134.6 102.732 134.68 103.532 135.32C104.492 135.96 104.972 136.76 104.972 137.72C104.492 138.68 104.492 139.32 104.972 139.64C105.452 139.8 105.692 140.28 105.692 141.08C105.692 141.72 106.172 142.52 107.132 143.48C108.732 144.92 108.412 146.76 106.172 149C104.572 150.28 102.892 151.08 101.132 151.4C99.5319 151.56 93.8519 151.56 84.0919 151.4C71.2919 151.4 63.1319 151.8 59.6119 152.6C58.3319 152.76 54.1719 152.92 47.1319 153.08C34.8119 153.4 26.2519 152.76 21.4519 151.16C19.8519 150.68 18.1719 149.48 16.4119 147.56C14.8119 145.64 14.0919 144.12 14.2519 143C14.4119 142.04 13.7719 140.92 12.3319 139.64C10.8919 138.36 10.2519 137.48 10.4119 137C10.7319 136.36 11.2119 136.36 11.8519 137C13.2919 138.12 14.0119 137.64 14.0119 135.56C14.0119 135.08 13.4519 134.92 12.3319 135.08C11.8519 135.24 11.5319 135.32 11.3719 135.32C11.3719 135.16 11.3719 134.76 11.3719 134.12C11.6919 133 12.1719 132.6 12.8119 132.92C13.6119 133.24 14.0119 132.92 14.0119 131.96C14.0119 131.16 14.3319 130.2 14.9719 129.08C15.7719 127.96 16.3319 127.56 16.6519 127.88C16.6519 127.88 16.7319 127.8 16.8919 127.64C17.2119 127.48 17.4519 127.16 17.6119 126.68C17.7719 126.2 17.9319 125.64 18.0919 125C19.3719 120.2 20.3319 117.24 20.9719 116.12C21.6119 115 22.8919 113.88 24.8119 112.76C26.5719 111.64 27.7719 109.8 28.4119 107.24C29.2119 104.68 29.6119 103.16 29.6119 102.68C29.6119 102.04 30.0119 101 30.8119 99.56C32.7319 96.36 37.1319 86.92 44.0119 71.24C50.8919 55.56 54.3319 47.16 54.3319 46.04C54.4919 45.4 54.1719 45 53.3719 44.84C52.7319 44.52 50.9719 44.36 48.0919 44.36C41.0519 44.2 36.4919 42.84 34.4119 40.28C32.6519 38.52 31.6119 37.64 31.2919 37.64C30.6519 37.64 28.1719 35.4 23.8519 30.92C19.5319 26.28 17.5319 23.8 17.8519 23.48C18.1719 23 20.1719 22.6 23.8519 22.28C32.0119 21.64 40.0919 20.44 48.0919 18.68L58.8919 16.76L62.0119 13.64Z" stroke="#EBCFB2"  mask="url(#path-1-outside-1)"/>
+        <path d="M172.159 16.76C173.759 15.32 175.679 14.68 177.919 14.84C180.159 15 181.839 15.88 182.959 17.48C183.759 18.6 184.399 19.16 184.879 19.16C186.159 19.16 187.599 22.68 189.199 29.72C190.959 36.6 192.079 43.72 192.559 51.08C193.039 54.44 193.439 57.72 193.759 60.92C194.079 63.96 194.399 68.12 194.719 73.4C195.039 78.68 195.359 81.32 195.679 81.32C195.999 81.32 196.639 80.04 197.599 77.48C198.399 74.6 201.919 66.52 208.159 53.24C214.399 39.8 218.399 31.56 220.159 28.52C222.239 25.16 223.439 23.08 223.759 22.28C224.559 20.52 226.719 19.24 230.239 18.44C231.039 17.8 231.759 17.8 232.399 18.44C233.039 19.08 233.279 19.96 233.119 21.08C232.959 22.04 232.959 22.68 233.119 23C233.279 23.32 233.839 23.88 234.799 24.68C235.919 25.32 236.879 25.88 237.679 26.36C238.479 26.68 238.879 26.76 238.879 26.6C238.879 26.28 239.119 26.36 239.599 26.84C240.239 27.16 241.199 27.56 242.479 28.04C243.759 28.36 244.559 28.84 244.879 29.48C245.199 30.12 244.719 31.4 243.439 33.32C242.319 35.24 241.439 36.12 240.799 35.96C240.639 35.8 240.479 35.8 240.319 35.96C240.319 36.12 240.319 36.36 240.319 36.68C240.479 39.24 240.239 40.44 239.599 40.28C239.439 40.28 239.279 40.36 239.119 40.52C238.959 40.52 238.879 40.76 238.879 41.24C238.879 42.2 238.399 43.8 237.439 46.04C236.639 48.28 236.079 49.4 235.759 49.4C235.119 49.4 234.799 49.72 234.799 50.36C235.119 52.76 234.319 54.92 232.399 56.84C231.599 57.48 231.359 58.04 231.679 58.52C231.999 59 231.759 59.4 230.959 59.72C230.159 59.88 229.759 60.44 229.759 61.4C229.759 62.36 229.519 63 229.039 63.32C228.719 63.48 228.559 64.2 228.559 65.48C228.399 66.44 228.159 66.92 227.839 66.92C227.519 65.96 227.199 65.8 226.879 66.44C226.079 67.88 225.599 69.88 225.439 72.44C225.279 73.56 224.799 74.44 223.999 75.08C223.359 75.56 222.719 76.92 222.079 79.16C221.599 81.24 221.119 82.76 220.639 83.72C220.159 84.68 219.919 86.04 219.919 87.8C220.079 89.4 219.599 92.12 218.479 95.96L214.879 107.24C213.599 111.08 212.799 113.8 212.479 115.4C212.159 117 211.599 118.52 210.799 119.96C210.159 121.4 209.439 122.92 208.639 124.52C207.839 126.12 206.959 127.32 205.999 128.12C205.039 128.92 204.479 130.6 204.319 133.16C204.319 135.08 204.319 136.28 204.319 136.76C204.479 137.08 204.879 137.24 205.519 137.24C206.639 137.4 207.199 137.72 207.199 138.2C207.359 138.68 207.119 139.64 206.479 141.08C203.919 146.52 201.119 150.28 198.079 152.36C196.799 153 195.839 153 195.199 152.36C194.719 151.56 194.239 151.16 193.759 151.16C193.439 151.16 192.959 150.68 192.319 149.72C191.839 148.76 190.399 148.28 187.999 148.28C186.239 148.28 185.199 148.12 184.879 147.8C184.559 147.48 183.999 146.68 183.199 145.4C182.239 143.64 181.359 142.6 180.559 142.28C179.759 141.8 178.479 140.76 176.719 139.16C175.279 137.88 174.399 136.52 174.079 135.08C173.759 133.64 173.519 130.04 173.359 124.28C173.199 121.24 173.199 119.16 173.359 118.04C173.679 116.92 174.479 115.64 175.759 114.2L177.679 112.28L176.959 95.48C175.679 63.64 174.239 45 172.639 39.56C172.479 38.28 172.079 38.6 171.439 40.52C171.439 41 171.199 41.64 170.719 42.44C169.919 45.8 168.959 50.28 167.839 55.88C166.879 61.32 166.159 64.84 165.679 66.44C165.199 67.88 164.799 69.8 164.479 72.2C164.159 74.6 163.439 78.44 162.319 83.72L159.679 97.88L157.279 112.52C156.479 116.52 155.999 121.24 155.839 126.68C155.679 131.96 155.919 134.76 156.559 135.08C157.039 135.56 157.199 137 157.039 139.4C156.879 141.64 156.559 143.08 156.079 143.72C155.599 144.2 155.359 144.84 155.359 145.64C155.359 146.76 155.039 148.12 154.399 149.72C153.759 151.32 153.039 152.2 152.239 152.36C151.599 152.52 150.719 152.28 149.599 151.64C148.639 151 147.759 150.84 146.959 151.16C146.319 151.64 145.199 151.96 143.599 152.12C142.159 152.28 140.879 152.36 139.759 152.36C138.639 152.36 138.079 152.2 138.079 151.88C138.079 151.4 137.679 151.16 136.879 151.16C136.239 151.16 135.279 150.12 133.999 148.04C132.719 146.12 131.279 144.44 129.679 143C128.079 141.56 126.719 140.84 125.599 140.84C124.479 140.84 123.679 140.52 123.199 139.88C122.719 139.08 122.559 138.12 122.719 137C123.199 135.56 122.879 134.44 121.759 133.64C120.799 132.68 120.319 130.92 120.319 128.36C120.319 125.64 120.879 123.64 121.999 122.36C122.639 121.08 122.959 120.04 122.959 119.24C122.959 118.28 122.719 115.8 122.239 111.8C120.159 94.68 118.399 72.04 116.959 43.88C116.639 35.24 115.919 29.72 114.799 27.32L113.119 23.48H116.239C118.159 23.48 119.359 23.96 119.839 24.92C120.479 25.88 121.439 26.6 122.719 27.08C123.999 27.4 125.679 28.92 127.759 31.64C132.559 38.2 136.399 51.64 139.279 71.96C140.239 79.16 140.959 83.16 141.439 83.96C141.759 84.44 142.239 83.88 142.879 82.28C143.999 80.04 147.359 71.48 152.959 56.6C158.239 42.2 161.999 32.76 164.239 28.28C166.639 23.8 167.839 21.16 167.839 20.36C167.839 19.56 168.159 19.16 168.799 19.16C169.439 19 170.559 18.2 172.159 16.76ZM165.679 38.36C167.599 34.68 168.399 32.52 168.079 31.88C167.919 31.08 167.599 30.68 167.119 30.68C166.639 30.52 166.319 30.68 166.159 31.16L163.999 37.64C162.879 41 162.399 43 162.559 43.64L164.959 39.8C165.119 39.16 165.359 38.68 165.679 38.36Z" stroke="#EBCFB2"  mask="url(#path-1-outside-1)"/>
+        <path d="M268.447 94.62H273.551C274.959 94.62 276.147 94.4733 277.115 94.18C278.112 93.8867 278.904 93.5053 279.491 93.036C280.077 92.5373 280.503 91.9653 280.767 91.32C281.031 90.6453 281.163 89.9267 281.163 89.164C281.163 88.4307 281.031 87.7413 280.767 87.096C280.503 86.4213 280.077 85.8347 279.491 85.336C278.904 84.8373 278.112 84.456 277.115 84.192C276.147 83.8987 274.959 83.752 273.551 83.752H268.447V94.62ZM265.279 80.848H274.343C277.511 80.848 280.004 81.5373 281.823 82.916C283.671 84.2947 284.595 86.3773 284.595 89.164C284.595 91.9507 283.671 94.048 281.823 95.456C280.004 96.8347 277.511 97.524 274.343 97.524H268.447V112H265.279V80.848ZM307.132 101.704C307.132 100.56 306.942 99.4893 306.56 98.492C306.208 97.4947 305.695 96.6293 305.02 95.896C304.346 95.1627 303.524 94.5907 302.556 94.18C301.618 93.74 300.547 93.52 299.344 93.52C298.142 93.52 297.056 93.74 296.088 94.18C295.15 94.5907 294.343 95.1627 293.668 95.896C293.023 96.6293 292.51 97.4947 292.128 98.492C291.776 99.4893 291.6 100.56 291.6 101.704C291.6 102.848 291.776 103.919 292.128 104.916C292.51 105.913 293.023 106.779 293.668 107.512C294.343 108.245 295.15 108.832 296.088 109.272C297.056 109.683 298.142 109.888 299.344 109.888C300.547 109.888 301.618 109.683 302.556 109.272C303.524 108.832 304.346 108.245 305.02 107.512C305.695 106.779 306.208 105.913 306.56 104.916C306.942 103.919 307.132 102.848 307.132 101.704ZM310.3 101.704C310.3 103.259 310.022 104.696 309.464 106.016C308.936 107.336 308.188 108.48 307.22 109.448C306.252 110.416 305.094 111.179 303.744 111.736C302.424 112.264 300.958 112.528 299.344 112.528C297.76 112.528 296.294 112.264 294.944 111.736C293.624 111.179 292.48 110.416 291.512 109.448C290.544 108.48 289.782 107.336 289.224 106.016C288.696 104.696 288.432 103.259 288.432 101.704C288.432 100.149 288.696 98.712 289.224 97.392C289.782 96.072 290.544 94.928 291.512 93.96C292.48 92.992 293.624 92.244 294.944 91.716C296.294 91.1587 297.76 90.88 299.344 90.88C300.958 90.88 302.424 91.1587 303.744 91.716C305.094 92.244 306.252 92.992 307.22 93.96C308.188 94.928 308.936 96.072 309.464 97.392C310.022 98.712 310.3 100.149 310.3 101.704ZM315.878 97.832C315.878 96.9227 315.849 95.9987 315.79 95.06C315.761 94.1213 315.732 92.904 315.702 91.408H318.562V95.236H318.65C318.856 94.6787 319.149 94.1507 319.53 93.652C319.912 93.124 320.366 92.6547 320.894 92.244C321.452 91.8333 322.082 91.5107 322.786 91.276C323.52 91.012 324.341 90.88 325.25 90.88C326.072 90.88 326.79 90.968 327.406 91.144L326.834 94.004C326.453 93.8573 325.896 93.784 325.162 93.784C324.048 93.784 323.094 94.004 322.302 94.444C321.51 94.8547 320.85 95.3973 320.322 96.072C319.794 96.7173 319.398 97.4213 319.134 98.184C318.9 98.9467 318.782 99.68 318.782 100.384V112H315.878V97.832ZM340.828 94.048H334.888V106.192C334.888 106.955 334.961 107.585 335.108 108.084C335.254 108.553 335.46 108.92 335.724 109.184C335.988 109.448 336.296 109.639 336.648 109.756C337.029 109.844 337.44 109.888 337.88 109.888C338.378 109.888 338.892 109.815 339.42 109.668C339.948 109.521 340.432 109.331 340.872 109.096L341.004 111.78C339.918 112.279 338.613 112.528 337.088 112.528C336.53 112.528 335.944 112.455 335.328 112.308C334.741 112.161 334.198 111.883 333.7 111.472C333.201 111.061 332.79 110.504 332.468 109.8C332.145 109.096 331.984 108.172 331.984 107.028V94.048H327.628V91.408H331.984V85.6H334.888V91.408H340.828V94.048ZM354.381 94.048H349.497V112H346.593V94.048H342.237V91.408H346.593V85.776C346.593 83.048 347.224 81.112 348.485 79.968C349.746 78.7947 351.418 78.208 353.501 78.208C353.912 78.208 354.322 78.2373 354.733 78.296C355.173 78.3547 355.598 78.428 356.009 78.516L355.481 81.156C355.129 81.068 354.762 80.9947 354.381 80.936C354 80.8773 353.618 80.848 353.237 80.848C352.445 80.848 351.8 80.98 351.301 81.244C350.802 81.508 350.421 81.8893 350.157 82.388C349.893 82.8573 349.717 83.4147 349.629 84.06C349.541 84.7053 349.497 85.3947 349.497 86.128V91.408H354.381V94.048ZM375.453 101.704C375.453 100.56 375.262 99.4893 374.881 98.492C374.529 97.4947 374.015 96.6293 373.341 95.896C372.666 95.1627 371.845 94.5907 370.877 94.18C369.938 93.74 368.867 93.52 367.665 93.52C366.462 93.52 365.377 93.74 364.409 94.18C363.47 94.5907 362.663 95.1627 361.989 95.896C361.343 96.6293 360.83 97.4947 360.449 98.492C360.097 99.4893 359.921 100.56 359.921 101.704C359.921 102.848 360.097 103.919 360.449 104.916C360.83 105.913 361.343 106.779 361.989 107.512C362.663 108.245 363.47 108.832 364.409 109.272C365.377 109.683 366.462 109.888 367.665 109.888C368.867 109.888 369.938 109.683 370.877 109.272C371.845 108.832 372.666 108.245 373.341 107.512C374.015 106.779 374.529 105.913 374.881 104.916C375.262 103.919 375.453 102.848 375.453 101.704ZM378.621 101.704C378.621 103.259 378.342 104.696 377.785 106.016C377.257 107.336 376.509 108.48 375.541 109.448C374.573 110.416 373.414 111.179 372.065 111.736C370.745 112.264 369.278 112.528 367.665 112.528C366.081 112.528 364.614 112.264 363.265 111.736C361.945 111.179 360.801 110.416 359.833 109.448C358.865 108.48 358.102 107.336 357.545 106.016C357.017 104.696 356.753 103.259 356.753 101.704C356.753 100.149 357.017 98.712 357.545 97.392C358.102 96.072 358.865 94.928 359.833 93.96C360.801 92.992 361.945 92.244 363.265 91.716C364.614 91.1587 366.081 90.88 367.665 90.88C369.278 90.88 370.745 91.1587 372.065 91.716C373.414 92.244 374.573 92.992 375.541 93.96C376.509 94.928 377.257 96.072 377.785 97.392C378.342 98.712 378.621 100.149 378.621 101.704ZM387.455 112H384.551V78.736H387.455V112ZM398.685 83.488C398.685 84.104 398.465 84.6173 398.025 85.028C397.585 85.4093 397.101 85.6 396.573 85.6C396.045 85.6 395.561 85.4093 395.121 85.028C394.681 84.6173 394.461 84.104 394.461 83.488C394.461 82.872 394.681 82.3733 395.121 81.992C395.561 81.5813 396.045 81.376 396.573 81.376C397.101 81.376 397.585 81.5813 398.025 81.992C398.465 82.3733 398.685 82.872 398.685 83.488ZM398.025 112H395.121V91.408H398.025V112ZM422.675 101.704C422.675 100.56 422.485 99.4893 422.103 98.492C421.751 97.4947 421.238 96.6293 420.563 95.896C419.889 95.1627 419.067 94.5907 418.099 94.18C417.161 93.74 416.09 93.52 414.887 93.52C413.685 93.52 412.599 93.74 411.631 94.18C410.693 94.5907 409.886 95.1627 409.211 95.896C408.566 96.6293 408.053 97.4947 407.671 98.492C407.319 99.4893 407.143 100.56 407.143 101.704C407.143 102.848 407.319 103.919 407.671 104.916C408.053 105.913 408.566 106.779 409.211 107.512C409.886 108.245 410.693 108.832 411.631 109.272C412.599 109.683 413.685 109.888 414.887 109.888C416.09 109.888 417.161 109.683 418.099 109.272C419.067 108.832 419.889 108.245 420.563 107.512C421.238 106.779 421.751 105.913 422.103 104.916C422.485 103.919 422.675 102.848 422.675 101.704ZM425.843 101.704C425.843 103.259 425.565 104.696 425.007 106.016C424.479 107.336 423.731 108.48 422.763 109.448C421.795 110.416 420.637 111.179 419.287 111.736C417.967 112.264 416.501 112.528 414.887 112.528C413.303 112.528 411.837 112.264 410.487 111.736C409.167 111.179 408.023 110.416 407.055 109.448C406.087 108.48 405.325 107.336 404.767 106.016C404.239 104.696 403.975 103.259 403.975 101.704C403.975 100.149 404.239 98.712 404.767 97.392C405.325 96.072 406.087 94.928 407.055 93.96C408.023 92.992 409.167 92.244 410.487 91.716C411.837 91.1587 413.303 90.88 414.887 90.88C416.501 90.88 417.967 91.1587 419.287 91.716C420.637 92.244 421.795 92.992 422.763 93.96C423.731 94.928 424.479 96.072 425.007 97.392C425.565 98.712 425.843 100.149 425.843 101.704Z" fill="white"/>
+        </svg>
     </div> 
     <!-- /PRELOADER --> 
 
 
 	<!-- WRAPPER -->
-	<div class="main-body">
-		<!-- NAVIGATION -->
-		<header class="left-bar">
-			<div class="padding-top">
-				<img src="images/ZhongheLogo.png" style="margin-left: 15%; width: 70%;">
-			</div>
-
-			<div class="social-link">
-				<div class="padding-bottom">
-					<ul class="non-bullet-ul">
-						<li><a href="https://zhonghewen.github.io/images/ZhongheWen_Resume.pdf"><i class="fa fa-download"></i></a></li>
-						<li><a href="https://www.linkedin.com/in/zhonghewen"><i class="fa fa-linkedin"></i></a></li>
-						<li><a href="mailto:zhonghe.wen@gatech.edu?"><i class="fa fa-envelope-o"></i></a></li>
-					</ul>
-				</div>
-			</div>
-		</header>
-		<!-- /NAVIGATION -->
+	<div class="main-body" >
 
 
 		<!-- CONTENTS -->
@@ -78,103 +63,104 @@
 			<!-- TIMELINE -->
 			<div class="timeline">
 				<div class="timeline-title">
-					<div ng-class="introClass" ><p>{{headline}}</p></div>
-					<p class="content-title">A UX designer with curiosity of the world and passion to solve problems.</p>
-					<p ><a href="https://zhonghewen.github.io/images/ZhongheWen_Resume.pdf"><i class="fa fa-download"></i> Dowload My Resume </a></p>
-
+                    <div class="Logo"><img src="images/Logo.svg" width="30"></div>
+					<div ng-class="introClass" >
+                        <img src="images/Designer.png" id="introBackground">
+                        <p>{{headline}}</p>
+                    </div>
 				</div>
 
-				<div class="projects" id="projectNav">
-					<div class="content-title">PROJECTS</div>
-					<ul class="non-bullet-ul">
-						<li class="project-item" ng-mouseover="setClass('amazoningReview')" ng-class="{'activeAmazoningReview': className == 'amazoningReview'}" >
-							<a href="{{project[0].projectLink}}" ><p>{{project[0].brief}}</p><span>&nbsp;{{project[0].duration}}</span></a>
-						</li>	
 
-						<li class="project-item" ng-mouseover="setClass('potluck')" ng-class="{'activePotluck': className == 'potluck'}" >
-							<a href="{{project[1].projectLink}}" ><p>{{project[1].brief}}</p><span>&nbsp;{{project[1].duration}}</span></a>
-						</li>
-						<li class="project-item" id="minibayIndex" ng-mouseover="setClass('minibay')" ng-class="{'activeMinibay': className == 'minibay'}" >
-							<a href="{{project[2].projectLink}}" ><p>{{project[2].brief}}</p><span>&nbsp;{{project[2].duration}}</span></a>
-						</li>	
-						<li class="project-item" ng-mouseover="setClass('omniar')" ng-class="{'activeOmniar': className == 'omniar'}" >
-							<a href="{{project[3].projectLink}}" ><p>{{project[3].brief}}</p><span>&nbsp;{{project[3].duration}}</span></a>
-						</li>	
+                <div class="projects" id="projectNav">
+                    <div class="content-title">WORK PROJECTS</div>
+                    <ul class="non-bullet-ul">
+                        <li class="project-item" >
+                            <a href="{{project[0].projectLink}}" onmouseover="jumpSlides(1)"><p>{{project[0].brief}}</p><span>&nbsp;{{project[0].duration}}</span></a>
+                        </li>   
 
-					</ul>
-				</div>
+                        <li class="project-item"  >
+                            <a href="{{project[1].projectLink}}"  onmouseover="jumpSlides(2)"><p>{{project[1].brief}}</p><span>&nbsp;{{project[1].duration}}</span></a>
+                        </li>
+                        <li class="project-item"   >
+                            <a href="{{project[2].projectLink}}" onmouseover="jumpSlides(3)"><p>{{project[2].brief}}</p><span>&nbsp;{{project[2].duration}}</span></a>
+                        </li>    
 
-				<div class="works">
-					<div class="content-title">WORKS</div>					
-					<ul class="non-bullet-ul">
-						<li class="project-item" ng-mouseover="setClass('adp')" ng-class="{'activeAdp': className == 'adp'}" >
-							<a href="mailto:zhonghe.wen@gatech.edu?"><p>{{work[0].brief}}</p><span>&nbsp; {{work[0].duration}}</span></a>
-						</li>	
-						<li class="project-item" ng-mouseover="setClass('camore')" ng-class="{'activeCamore': className == 'camore'}" >
-							<a href="mailto:zhonghe.wen@gatech.edu?" ><p>{{work[1].brief}}</p><span>&nbsp; {{work[1].duration}}</span></a>
-						</li>
-					</ul>
-				</div>	
+                    </ul>
+                </div>
 
+
+                <div class="Links">
+                    <button class="btn"><a href="mailto:w1043086039@gmail.com?"> <i class="fas fa-envelope"> </i><span> Contact</span></a></button>
+                    <a href="https://www.linkedin.com/in/zhonghewen/"><i class="fab fa-linkedin"> </i><span> Connect</span></a>
+                    <a href="/images/Zhonghe_Resume.pdf"><i class="fas fa-download"> </i><span> Resume</span></a>
+                </div>
 						
 			</div>
 			<!-- /TIMELINE -->
 
 			<!-- DETAILS -->
-			<div class="project-des">
-				<div class="project-des-item " id={{item.id}} ng-repeat="item in project" ng-style="item.mainColor" >
-					<div class="preview" >
-                        <!--
-                        <p class="content-title font-alt-cap">{{item.title}}</p>                            
-						<p style="margin-top: 0px">
-						{{item.hashTag}}	</p>	
-                        -->
-						<video src="{{item.backgroundVideo}}" controls="controls" loop></video>	
-						<!--<img src="{{item.img}}">-->
-					</div>
-					<div class="description">
-						<div class="projectHeader">
-							<p class="content-title font-alt-cap">{{item.title}}</p>	
-                            <p>{{item.highlight}}</p>
-						</div>
-						<div>
-							<p class="font-alt-b">Story</p>
-							<p>{{item.story}}</p>
-                            <!--
-							<p class="font-alt-b">Highlights</p>
-							<p>{{item.highlight}}</p>
-                        -->
-							<p class="font-alt-b">My Role</p>
-							<p>{{item.myRole}}</p>
-						</div>
-						<button class="btn" ng-style="item.buttonColor" > <a href="{{item.projectLink}}">{{item.button}}</a></button>
-					</div>
-				</div>
-				<div class="project-des-item " id={{item.id}} ng-repeat="item in work" ng-style="item.mainColor" >
-					<div class="preview" >
-						<!--<p>{{item.hashTag}}</p>-->
-						<img src="{{item.backGroundImg}}">
-					</div>
-					<div class="description" >
-						<div class="projectHeader">
-							<p class="content-title font-alt-cap">{{item.title}}</p>	
-                            <p>{{item.highlight}}</p>
-						</div>
-						<div>
-							<p class="font-alt-b">Overview</p>
-							<p>{{item.overview}}</p>
-							<p class="font-alt-b">Responsibilities</p>
-							<p>{{item.responsibilities}}</p>
-							<p class="font-alt-b">Deliverables</p>
-							<p>{{item.deliverables}}</p>
-							<p class="font-alt-b">Challenges</p>
-							<p>{{item.challenges}}</p>							
-						</div>
-						<button class="btn" ng-style="item.buttonColor"><a href="mailto:zhonghe.wen@gatech.edu?">More Details? REACH OUT TO ME!</a> </button>
-					</div>
-				</div>		
-			</div>
-			<!-- /DETAILS -->	
+            <!-- fixed content here -->
+            <div class="workDetails" id="workContainer">
+
+              <!-- first project -->
+                <div class="workContent activeWorkContent" id="YEDashboard" >
+                    <section >
+                        <img src="images/Cover_YED.png" >
+
+                        <p class="project-name">{{project[0].title}}</p>
+                        <p>{{project[0].story}}</p>
+                        <p class="button-link"><a href="{{project[0].projectLink}}" ng-style="project[0].fontColor" class="project-link">VIEW DETAILS --></a></p>                       
+                    </section>
+                            
+
+                    <div class="workBackground" ng-style="project[0].mainColor"></div>
+                </div>
+
+                               
+          
+	              <!-- second project -->
+                <div class="workContent" id="RuleBuilder" >
+                    <section>
+                        <img src="images/Cover_RB.png" > 
+
+                        <p class="project-name">{{project[1].title}}</p>
+                        <p>{{project[1].story}}</p>
+                        <p class="button-link"><a href="{{project[1].projectLink}}" ng-style="project[1].fontColor" class="project-link">VIEW DETAILS --></a></p>  
+                                             
+                    </section>
+
+                    <div class="workBackground" ng-style="project[1].mainColor"></div>
+                </div>
+
+    	              <!-- 3rd project -->
+                <div class="workContent" id="MobileOnboarding">
+                    <section>
+                        <img src="images/Cover_MO.png" >
+
+                        <p class="project-name">{{project[2].title}}</p>
+                        <p>{{project[2].story}}</p>
+                        <p class="button-link"><a href="{{project[2].projectLink}}" ng-style="project[2].fontColor" class="project-link">VIEW DETAILS --></a></p>                        
+                    </section>
+                            
+
+                    <div class="workBackground" ng-style="project[2].mainColor"></div>
+                </div> 
+
+                      <!-- self intro -->
+                <div class="workContent" id="selfIntro">
+                    <section>
+                        <img src="images/Zhonghe_Photo.png" >
+
+                        <p class="project-name">{{project[3].title}}</p>
+                        <p>A designer who enjoys solving complicated problems elegantly. Here’re 2 fun facts about me :) </p>
+                        <p>BIG FUN of civilization 6 -<br>
+                         Attended a parkour summer camp in 2016 -</p>
+                        <p class="button-link"><a href="" ng-style="project[3].fontColor" class="project-link">VIEW DETAILS --></a></p>                         
+                    </section>
+                           
+
+                    <div class="workBackground" ng-style="project[3].mainColor"></div>
+                </div>                            
 
 		</div>
 		<!-- CONTENTS -->
@@ -187,7 +173,134 @@
 
 	<!-- /WRAPPER -->	
 
+    <script>
+        // google analytics
+        // (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        // (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        // m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        // })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
+        // ga('create', 'UA-90435501-1', 'auto');
+        // ga('send', 'pageview');
+
+
+        // vertical slides
+        var slideIndex = 1;
+        showSlides(1);
+
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+          console.log('plus slides current index is:');
+        }
+
+        function jumpSlides(n) {
+          showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+
+          var i;
+          var browserHeight = window.innerHeight;
+          var menu = document.getElementsByClassName("project-item");
+          var workContent = document.getElementsByClassName("workContent");
+          var workContainer = document.getElementById("workContainer");
+
+          console.log('show slides current index is:');
+          console.log(slideIndex);
+
+          if (n > workContent.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = workContent.length}
+
+          for (i = 0; i < menu.length; i++) {
+             menu[i].className = "project-item"; 
+          }
+
+          for (i = 0; i < workContent.length; i++) {
+             workContent[i].className = "workContent";  
+          }
+
+          if (slideIndex == 1) {
+            menu[slideIndex-1].className += " activeYEDashboard";
+          }
+          else if (slideIndex == 2) {
+            menu[slideIndex-1].className += " activeRuleBuilder";
+          }
+          else if (slideIndex == 3) {
+            menu[slideIndex-1].className += " activeMobileOnboarding";
+          }
+          else {}
+
+          workContainer.style.transform = "translateY(-"+ browserHeight*(slideIndex-1) +"px)"; 
+
+          workContent[slideIndex-1].className += " activeWorkContent";
+
+          console.log('current index is:');
+          console.log(slideIndex);
+        }    
+
+
+            //handle touch
+        const SCROLL_SENSITIVITY = 4;
+        const LONG_SWIPE = 200;
+        const UP_KEYS = [37, 38];
+        const DOWN_KEYS = [39, 40];
+        let lock = false;
+
+        // Returns a function, that, as long as it continues to be invoked, will not
+        // be triggered. The function will be called after it stops being called for
+        // N milliseconds. If `immediate` is passed, trigger the function on the
+        // leading edge, instead of the trailing.
+        function debounce(func, wait, immediate) {
+            var timeout;
+            return function() {
+                var context = this, args = arguments;
+                var later = function() {
+                    timeout = null;
+                    if (!immediate) func.apply(context, args);
+                };
+                var callNow = immediate && !timeout;
+                clearTimeout(timeout);
+                timeout = setTimeout(later, wait);
+                if (callNow) func.apply(context, args);
+            };
+        };
+
+        const handleWheel = debounce( function(event) {
+            event.stopPropagation();
+
+            // Todo: handle special scroll types like mac etc
+            if (lock) { return; }
+
+            if (event.deltaY > SCROLL_SENSITIVITY && (slideIndex <= 3)) {
+                console.log('scroll down 1');
+                plusSlides(1);
+
+            } else if ( event.deltaY < -SCROLL_SENSITIVITY && (slideIndex >= 2) ) {
+                console.log('scroll up 1');
+                plusSlides(-1);
+            }
+        },20);
+
+        const handleKey = function(event) {
+            if (lock) { return; }
+            let key = event.which;
+
+            if (UP_KEYS.includes(key)) {
+                plusSlides(-1);
+
+            } else if (DOWN_KEYS.includes(key) ) {
+                plusSlides(1);
+            }
+        };
+
+        
+
+        document.addEventListener('wheel', handleWheel);
+        document.addEventListener('keyup', handleKey);
+
+
+
+    </script>
 
 	<!-- Javascript files -->
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>	
@@ -195,33 +308,20 @@
         angular.module('Zhonghe Portfolio',[])
         .controller('previewController', ['$scope', '$location', '$anchorScroll','$document','$window',function($scope, $location, $anchorScroll, $document, $window) {
 
-        	$scope.headline = "Hi! I am Zhonghe!";
+            $scope.headline = "Hi! I am Zhonghe!";
             $scope.introClass = "home-title";
 
-        	$scope.selfIntro = {
-        		greeting: "Hi! I am Zhonghe!",
-        		sell: "I am a second year MS-HCI student at GeorgiaTech. Here I grew up rapidly, understanding how to conduct research/choose research method, how to justify the design, how to express myself. Most importantly, I become confident and be proud of meself! I've learned so many new technologies this year, from design tools (sketch, AE, inVision), to physical prototyping method(3d printing, laser cut), to front-end language (html, css, javascript, and many other js libraries), to data manipulation (python and sklearn). Now, I truly belive that I could and would love to take challenges. Life is always about challenging ourself and I am ready for it!"
-        	};
-
-        	$scope.setIntro = function(text) {
-        		if (text == "sell") {
-        			$scope.headline = $scope.selfIntro.sell ;
-                    $scope.introClass = "home-intro";
-
-        		}
-        		else {
-        			$scope.headline = $scope.selfIntro.greeting;
-                    $scope.introClass = "home-title";                    
-        		}
-        	}
+            $scope.selfIntro = {
+                greeting: "Hi! I am Zhonghe!",
+                sell: ""
+            };
 
         	$scope.project = [
         	{
-        		id: "amazoningReview",
+        		id: "YEDashboard",
         		projInd: 0,
-        		trycolor:"#EC6773",
-        		brief:"Amazoning Review, Save you from a sea of reviews | ",
-        		duration:" Jan. - present 2018",
+        		brief:"Year-End Dashboard",
+        		duration:" #Design Lead #Significant Impact",
         		mainColor: {
         			"background-color": "#CAEBF2"
         		},
@@ -232,22 +332,19 @@
         			"background-color": "#4A90E2"
         		},
         		hashTag:"#Data visualization",
-        		backGroundImg:"",
-        		backgroundVideo:"videos/design3.mov",
-        		img:"images/mockup.png",
-        		title:"Amazoning Review",
-        		story:"Mary wants a pair of earbuds. She searches 'sport earbuds' on Amazon and opens many earbud pages. She reads over the product description but still doesn't understand whether the earbuds is good for jogging. She tries to read reviews to understand it and gets lost in the overwhelming reviews. Want to check out how we solve the problem?",
+        		backgroundVideo:"",
+        		img:"images/Cover_YED.png",
+        		title:"Year-End Dashboard",
+        		story:"Help payroll specialist complete year-end payroll tasks correctly & efficiently.",
         		highlight:"#DataVisualization",
-        		myRole:"(Personal Project) Designer; Researcher; Developer",
-        		projectLink:"amazoningReview.html",
+        		projectLink:"project01.html",
         		button:"VIEW DETAILS"
-        	},        	
+        	} ,        	
         	{
-        		id: "potluck",
+        		id: "RuleBuilder",
         		projInd: 1,
-        		trycolor:"#EC6773",
-        		brief:"Potluck, Your on-campus dining saver | ",
-        		duration:" Aug. - Dec. 2016",
+        		brief:"Rule Builder ",
+        		duration:" #Design System",
         		mainColor: {
         			"background-color": "#FCE7E9"
         		},
@@ -258,21 +355,19 @@
         			"background-color": "#EC6773"
         		},
         		hashTag:"#Strict user-centered design process",
-        		backGroundImg:"",
-        		backgroundVideo:"videos/potluckVideo.mp4",
-        		img:"images/mockup.png",
-        		title:"POTLUCK",
-        		story:"Imagine you are on a trip to Mexico and would like to try out local foods. However, you couldn’t figure out which dishes are delicious so you have to randomly order something. And it’s AWFUL! Want to check out how we solve the problem?",
-        		highlight:"#UserCenteredDesign #MobileAppDesign",
-        		myRole:"Lead designer; Researcher",
-        		projectLink:"project01.html",
+        		backgroundVideo:"",
+        		img:"images/Cover_RB.png",
+        		title:"RuleBuilder",
+        		story:"Consolidate the existing rule builder components and improve the usability.",
+        		highlight:"#Design System",
+        		projectLink:"project02.html",
         		button:"VIEW DETAILS"
         	},
         	{
-        		id: "minibay",        		
+        		id: "MobileOnboarding",        		
         		projInd: 2,
-        		brief:"Minibay, Grandma's nutrition instructor | ",
-        		duration:"Jan. - May 2017",        		
+        		brief:"Mobile New Hire Onboarding",
+        		duration:" #Mobile",        		
         		mainColor: {
         			"background-color": "#E7FCFA"
         		},   
@@ -283,21 +378,17 @@
         			"background-color": "#50E3C2"
         		},       		     		
         		hashTag:"",
-        		backGroundImg:"",
-        		backgroundVideo:"videos/miniBayVideo.mp4",
-        		img:"",
-        		title:"MINIBAY",
-        		story:"David’s mom have been over 70 and suffers from hyperglicemia. She really wants nutrition instructions and maintains health with easy technology. In the meantime, David wants to provide care to his parents while having his own busy life. Want to check out how we develop a solution satisfying both the parent and the kid?",
-        		highlight:"#SmartHome #DesignForTheElderly",
-        		myRole:"Designer of the dashboard/box prototype",
-        		projectLink:"project02.html",
+        		backgroundVideo:"",
+        		img:"images/Cover_MO.png",
+        		title:"Mobile New Hire Onboarding",
+        		story:"Help new hires easily onboard with their new jobs.",
+        		highlight:"#Mobile",
+        		projectLink:"project03.html",
         		button:"VIEW DETAILS"        		
         	},
         	{
-        		id : "omniar",
+        		id : "selfIntro",
         		projInd: 3,
-        		brief:"OmniAR, Efficient AR shopping experience for Warmart | ",
-        		duration:"Jan. - May 2017",         		
         		mainColor: {
         			"background-color": "#FCF9E7"
         		},   
@@ -307,156 +398,13 @@
         		buttonColor:{
         			"background-color": "#E3AA50"
         		},
-        		hashTag:"",
-        		backGroundImg:"",
-        		backgroundVideo:"videos/omniARVideo.mp4",
-        		img:"",
-        		title:"OmniAR",
-        		story:"Mary finds her windshield cleaner has depleted so she decides to get new cleaner at nearby Walmart. However, she can't find it at Walmart. She asks the Walmart associate. But the person is so busy that can't help her. Want to check out how we better the shopping experience?",
-        		highlight:"#ComplicatedUserGroup #AR",
-        		myRole:"Lead designer",
-                projectLink:"project03.html",
+        		img:"images/Zhonghe_Photo.png",
+        		title:"Hi, I’m Zhonghe",
         		button:"View details"        		        		
-        	}];
+        	}
 
-
-        	$scope.work = [
-        	{
-        		id : "adp",
-        		projInd: 4,
-        		brief:"ADP, Inc., UX Design Intern | ",
-        		duration:"May - Aug. 2017",         		
-        		mainColor: {
-        			"background-color": "#FFF3EC"
-        		},   
-        		fontColor: {
-        			"color": "#DC7119"
-        		} ,       		
-        		buttonColor:{
-        			"background-color": "#F28932"
-        		},
-        		hashTag:"",
-        		backGroundImg:"images/adpPrev.png",
-        		backgroundVideo:"",
-        		img:"",
-        		title:"ADP",
-        		overview:"ADP offers Payroll Services, HR Software and Tax and Compliance services for businesses of all sizes. My major project was redesigning the Open Enrollment center where HR annually set up the enrollment of benefit plan for their employees. ",
-        		responsibilities:"1.Designed the webpage following ADP visual guideline; 2.Participated in design iteration and delivered the design to the development team with prototype and design annotation; 3.Led validation research which justify new designs; 4.Participated in other cross-team early-stage or mid-stage research to prepare for future updates",
-                deliverables:"InVision prototype, Design annotation",
-                challenges:"Quickly get familiar with the context; Narrow down design scope; Conducted research to support design",
-                highlight: "#CRM #DesignValidation" 		
-        	},
-        	{
-        		id : "camore",
-        		projInd: 5,
-        		brief:"Beijing Camore Health&Tech Co. Ltd., UX Design Intern | ",
-        		duration:"Jan. - May 2015",         		
-        		mainColor: {
-        			"background-color": "#F3F4FA"
-        		},   
-        		fontColor: {
-        			"color": "#5A7AB0"
-        		} ,       		
-        		buttonColor:{
-        			"background-color": "#5A7AB0"
-        		},
-        		hashTag:"",
-        		backGroundImg:"images/camorePrev.png",
-        		backgroundVideo:"",
-        		img:"",
-        		title:"CAMORE",
-        		overview:"Camore is an e-commerce company providing 60-min medicine delivery service for customers. My major project was designing the management system supporting employees' operations (managing medicines, providing customer services).",
-        		deliverables:"Axure prototype",
-        		responsibilities:"1.Built the information architecture and created detailed interaction flow of our e-commerce management system (employee side); 2.Created wireframe and web pages of the management system; 3.Participated in agile development and design iteration",
-                challenges:"Start building information architecture from scratch",
-                highlight:"#CRM #Startup #AgileDevelopment"
-        	}      	        	
-        	];
-
-        	$scope.className= 'amazoningReview';
-
-        	$scope.setClass = function(className) {
-        		$scope.className = className;
-			      
-			    // set the location.hash to the id of
-			    // the element you wish to scroll to.
-			    if (className == 'amazoningReview') {
-			    	$location.hash('amazoningReview');
-			    	$anchorScroll();
-
-			    }
-			    else if (className == 'potluck') {
-			    	$location.hash('potluck');
-			    	$anchorScroll();
-			    }			    
-			    else if (className == 'minibay') {
-			    	$location.hash('minibay');
-			    	$anchorScroll();
-			    }
-			    else if (className == 'omniar') {
-			    	$location.hash('omniar');
-			    	$anchorScroll();		    		    	
-			    }	
-			    else if (className == 'adp') {
-			    	$location.hash('adp');
-			    	$anchorScroll();
-			    }
-			    else if (className == 'camore') {
-			    	$location.hash('camore');
-			    	$anchorScroll();
-			    }		    
-        	};
-
-
-        	angular.element(function() {
-
-				var amazoningReview = angular.element(document.getElementById("amazoningReview")).prop('offsetTop');
-
-				var pot = angular.element(document.getElementById("potluck")).prop('offsetTop');
-				//console.log(pot);
-
-				var mini = angular.element(document.getElementById("minibay")).prop('offsetTop');
-				//console.log(mini);
-
-				var omni = angular.element(document.getElementById("omniar")).prop('offsetTop');
-				//console.log(omni);
-
-				var adp = angular.element(document.getElementById("adp")).prop('offsetTop');		
-				var camore = angular.element(document.getElementById("camore")).prop('offsetTop');
-
-  				angular.element($window).bind('scroll', function(e) {
-  					$scope.$apply( function() {
-	         			var Ytop = $window.pageYOffset;
-	         			//console.log(Ytop);
-	                    if (Ytop >= amazoningReview && Ytop <= pot) {
-	                    	$scope.className = 'amazoningReview';
-	                    }
-	                    else if (Ytop >= pot && Ytop < mini) {
-	             	      	$scope.className = 'potluck';
-	                    }
-	                    else if (Ytop >= mini && Ytop < omni) {
-	             	      	$scope.className = 'minibay';
-	                    }
-	                    else if (Ytop >= omni && Ytop < adp) {
-	             	      	$scope.className = 'omniar';
-	                    } 
-	                    else if (Ytop >= adp && Ytop < camore) {
-	             	      	$scope.className = 'adp';
-	                    }
-	                    else if (Ytop >= camore ) {
-	             	      	$scope.className = 'camore';
-	                    } ;               	                                      
-  					});
-
-    			});
-
-
-    		});
-
+            ];
         		
-        	
-
-
       	
 
   		}]);

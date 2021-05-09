@@ -1,0 +1,58 @@
+.page-loader {
+	width: 100%;
+	height: 100vh;
+	background-color: black;
+	z-index: 10;
+	margin: 0;
+}
+
+.loaderBar {
+	width: 0vw;
+	height: 5px;
+	background-color: #EBCFB2;
+	animation: barGrow 2.8s ease forwards;
+}
+
+#loader {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	animation: fillColor 0.5s ease forwards 2.3s ;
+
+}
+
+#loader path:nth-child(1) {
+	stroke-width:5;
+	stroke-dasharray: 557;
+	stroke-dashoffset:557;
+	animation: lineAnim 2s ease forwards ;
+}
+
+#loader path:nth-child(2) {
+	stroke-width:5;
+	stroke-dasharray: 892;
+	stroke-dashoffset:892;	
+	animation: lineAnim 2s ease forwards ;
+
+}
+
+
+@keyframes barGrow {
+	to {
+		width: 100vw;
+	}
+
+}
+
+@keyframes lineAnim {
+	to {
+		stroke-dashoffset: 0;
+	}
+}
+
+@keyframes fillColor {
+	to {
+		fill:#EBCFB2;
+	}
+}
