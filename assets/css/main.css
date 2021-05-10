@@ -688,19 +688,19 @@ html, body {
 }
 
 .activeWorkContent img {	
-	animation: fadeUp 1s ease-in-out;
-	animation-delay: 1s;	
+	animation: fadeUp 0.5s ease-in-out;
+	animation-delay: 0.5s;	
 	animation-fill-mode: forwards;	
 }
 
 .activeWorkContent p {
-	animation: fadeUp 1s;
-	animation-delay: 1s;
+	animation: fadeUp 0.5s;
+	animation-delay: 0.5s;
 	animation-fill-mode: forwards;	
 }
 
 .activeWorkContent div {
-	animation: spreadHalf 1s ;
+	animation: spreadHalf 0.5s ;
 	animation-iteration-count: 1;
 	animation-fill-mode: forwards;
 }
@@ -1331,18 +1331,25 @@ Carousel
 	width: 45vw;
 }
 
+.projectLink-left {
+	padding-left: 20vw;
+	padding-top: 20px;
+}
+
+.projectLink-right {
+	padding-top: 20px;
+    /* padding-right: 15vw; */
+    padding-left: 20px;
+}
+
 .projectLink h1{
     font-size: 16px;
     text-transform: uppercase;
     font-weight: 600;
-    margin-left: 10%;
-    margin-top: 10%;	
 }
 
 .projectLink p{
     font-style: italic;
-	margin-left: 10%;
-	margin-right: 8%;
 }
 
 .homeAndContact {
